@@ -62,7 +62,7 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button class="hero-button btn" type="button">Заказать услугу</button>
+          <button type="button" class="hero-button btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Preference -->
@@ -124,14 +124,17 @@
           <ul class="work list">
             <li class="work-item">
               <img class="work-img" src="./imgs/img1.jpg" width="370" alt="Десктопные приложения" />
+              <p class="work-text">Десктопные приложения</p>
             </li>
 
             <li class="work-item">
               <img class="work-img" src="./imgs/img2.jpg" width="370" alt="Мобильные приложения" />
+              <p class="work-text">Мобильные приложения</p>
             </li>
 
             <li class="work-item">
               <img class="work-img" src="./imgs/img3.jpg" width="370" alt="Дизайнерские решения" />
+              <p class="work-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -409,6 +412,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="icon icon-close" width="30" height="30">
+            <use href="./imgs/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
